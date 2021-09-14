@@ -9,6 +9,7 @@ ap.add_argument("-i", "--image", required=True,
 # Criamos um dicionário que receberá os valores dos argumentos
 # As chaves do dicionário serão as labels criadas no na definição do argumento
 args = vars(ap.parse_args())
+# A função vars() retorna os valores correspondente ao atributo __dict__ do objeto
 
 # Aqui lemos a imagem que é acessada através do caminho no disco passado como argumento.
 # Acessamos o valor em args usando como chave do dicionário args o mesmo valor que a definição do argumento
